@@ -1,3 +1,13 @@
-h1 {
+nav {
   color: red;
+  border: 1px solid black;
+}
+nav ul {
+  border: 1px solid black;
+  display: flex;
+}
+nav li {
+  border: 1px solid black;
+  display: flex;
+  text-decoration: none;
 }
