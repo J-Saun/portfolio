@@ -7,12 +7,14 @@ body {
 nav {
   color: red;
   padding: 0.1em 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   border: 1px solid black;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
 }
 nav ul {
+  width: min-content;
   display: flex;
   border: 1px solid black;
 }
