@@ -1,0 +1,111 @@
+body {
+  font-family: "Cormorant", serif;
+  font-family: "Rajdhani", sans-serif;
+  font-family: "The Nautigal", cursive;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  border-bottom: 1px solid rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.37);
+  /* position: absolute; */
+  /* top: 0; */
+}
+.center-links {
+  padding: 0.5em;
+  color: rgb(0, 0, 0);
+  /* background-color: rgb(255, 255, 255); */
+  display: flex;
+  justify-content: center;
+}
+.nav-btn {
+  /* transition: all 0.4s; */
+  color: rgb(0, 0, 0);
+  position: relative;
+  padding: 0.3em;
+  font: 1.5em "Rajdhani";
+  text-align: center;
+  margin: 0.2em;
+  transition: 0.5s border-bottom ease-in-out;
+}
+.nav-btn span {
+  /* transition: all 0.3s; */
+  color: black;
+}
+.nav-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top: 1px solid;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  transform: scale(0.1, 1);
+}
+.nav-btn:hover span {
+  color: orangered;
+}
+.nav-btn:hover {
+  color: rgb(0, 0, 0);
+}
+.nav-btn:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+  --webkit-box-shadow: 0 10px 6px -6px #777;
+  --moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+.nav-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.nav-btn:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+.nav-btn a {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+.active {
+  content: "";
+  /* position: absolute; */
+  /* bottom: 0; */
+  /* left: 0; */
+  color: rgb(0, 247, 255);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.elegant {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Cormorant", serif;
+  font-family: "The Nautigal", cursive;
+  color: orangered;
+  letter-spacing: 0.1em;
+}
+.box-shadow {
+  --webkit-box-shadow: 0 10px 6px -6px #777;
+  --moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+/* START BODY CSS */
+.page-section {
+  /* background-color: rgb(255, 0, 0); */
+  height: 100vh;
+  margin: 2vh;
+}

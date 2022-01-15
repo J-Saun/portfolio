@@ -7,60 +7,180 @@
     <title>Gallery</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="gallery.css" />
+    <link rel="stylesheet" href="./styles/gallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="gallery">
-      <h1>hello world</h1>
-      <figure class="img">
-        <img class="img" id="img" src="/img/img_1.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="img/img_2.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="img/img_3.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="/img/img_4.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="/img/img_5.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="/img/img_6.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="/img/img_7.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="/img/img_8.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="/img/img_9.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="/img/img_10.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="/img/img_11.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-      <figure class="img">
-        <img src="/img/img_12.jpg" alt="" />
-        <figcaption>cap</figcaption>
-      </figure>
-    </div>
-    <script src="" async defer></script>
+    <nav class="navbar navbar-expand-sm">
+      <a class="nav-link btn-one" href="#">James Alabiso</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="set-navbar collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="btn-one active">
+            <a class="nav-link" href="#about"
+              >About <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="btn-one">
+            <a class="nav-link" href="#contact">Contact </a>
+          </li>
+          <li class="btn-one">
+            <a class="nav-link" href="#support">Support </a>
+          </li>
+        </ul>
+      </div>
+      <a class="nav-link btn-one">Client Portal</a>
+    </nav>
+
+    <main class="">
+      <!-- <div class="social-showcase">
+        <a href="instagram.com"><i class="ri-instagram-line"></i></a>
+        <a href="pinterest.com"><i class="ri-pinterest-line"></i></a>
+        <a href="instagram.com"><i class="ri-facebook-line"></i></a>
+        <a href="instagram.com"><i class="ri-twitter-line"></i></a>
+      </div> -->
+
+      <div class="gallery">
+        <a class="effect1 gallery-item" href="#wedding">
+          <figure class="figure">
+            <img
+              class="figure-img img-fluid rounded effect1"
+              id="img"
+              src="/img/wedding_cover.jpg"
+              alt=""
+            />
+            <figcaption>
+              <a class="nav-link effect1" href="#">Weddings</a>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#portraits" class="gallery-item">
+          <figure class="figure">
+            <img
+              class="figure-img img-fluid rounded effect1"
+              id="img"
+              src="/img/portrait_cover.jpg"
+              alt=""
+            />
+            <figcaption>
+              <a class="nav-link effect1" href="#">Portraits</a>
+            </figcaption>
+          </figure>
+        </a>
+        <div class="small-img">
+          <a href="urban" class="gallery-item">
+            <figure class="figure">
+              <img
+                class="figure-img img-fluid rounded effect1"
+                id=""
+                src="/img/urban_cover.jpg"
+                alt=""
+              />
+              <figcaption>
+                <a class="nav-link effect1" href="#">Urban</a>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#landscape" class="effect1 gallery-item">
+            <figure class="figure">
+              <img
+                class="figure-img img-fluid rounded effect1"
+                id="img"
+                src="/img/img_.jpg"
+                alt=""
+              />
+              <figcaption class="">
+                <a class="nav-link effect1" href="#">Landscape</a>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+
+      <!-- <figure class="img">
+          <img class="img" id="img" src="/img/img_1.jpg" alt="" />
+          <figcaption>cap 1</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="img/img_2.jpg" alt="" />
+          <figcaption>cap 2</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="img/img_3.jpg" alt="" />
+          <figcaption>cap 3</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="/img/img_4.jpg" alt="" />
+          <figcaption>cap 4</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="/img/img_5.jpg" alt="" />
+          <figcaption>cap 5</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="/img/img_6.jpg" alt="" />
+          <figcaption>cap 6</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="/img/img_7.jpg" alt="" />
+          <figcaption>cap 7</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="/img/img_8.jpg" alt="" />
+          <figcaption>cap 8</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="/img/img_9.jpg" alt="" />
+          <figcaption>cap 9</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="/img/img_10.jpg" alt="" />
+          <figcaption>cap 10</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="/img/img_11.jpg" alt="" />
+          <figcaption>cap 11</figcaption>
+        </figure>
+        <figure class="img">
+          <img src="/img/img_12.jpg" alt="" />
+          <figcaption>cap 12</figcaption>
+        </figure> -->
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="gallery.js" async defer></script>
   </body>
 </html>

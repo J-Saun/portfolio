@@ -1,0 +1,144 @@
+body {
+  background-color: cadetblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+}
+main {
+  width: max-content;
+}
+nav {
+  padding: 10em;
+}
+.nav-link {
+  font: 1.5em "Open Sans";
+  letter-spacing: 0.2em;
+  color: black;
+  margin: 0.2em;
+  transition: 0.4s letter-spacing ease-in-out;
+  /* transition: 0.5s border-bottom ease-in-out; */
+}
+/* .nav-link:hover {
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1em;
+  font-size: 1.7em;
+}
+nav-link a:hover {
+  font: 2em "Open Sans";
+  color: green;
+} */
+#nav-social {
+  font: 1.8em "Open Sans";
+  letter-spacing: 0.2em;
+  color: black;
+  transition: 0.4s letter-spacing ease-in-out;
+}
+.navbar-brand {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.side-nav {
+  background-color: rgb(136, 177, 255);
+  width: 33%;
+  max-width: 400px;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#client-port {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*
+.artist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.company-name {
+  margin: 1em auto;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  color: black;
+}
+.gallery {
+  background-color: darkgreen;
+  width: 66%;
+  height: 100vh;
+  text-align: center;
+} */
+.btn-one {
+  color: #fff;
+  transition: all 0.4s;
+  position: relative;
+  padding: 0.3em;
+  /* 
+  width: 100%;
+  */
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn-one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+.fa-facebook {
+  color: rgb(66, 103, 178);
+  /* font-size: 2em; */
+}
+.fa-pinterest {
+  color: #e60023;
+  /* font-size: 2em; */
+}
+.fa-instagram {
+  color: #833ab4;
+  /* font-size: 2em; */
+}
+.fa-twitter {
+  color: #1da1f2;
+  /* font-size: 2em; */
+}
