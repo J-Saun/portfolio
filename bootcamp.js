@@ -70,3 +70,20 @@ const genRandColor = () => {
 //   winningScore = parseInt(this.value);
 //   reset();
 // });
+
+//Work here
+
+const multiply = (a, b) => a * b;
+console.log(multiply(3, 3));
+
+const square = (x) => multiply(x, x);
+console.log(square(3));
+
+const num = 100;
+
+const isRightAngle = (a, b, c) => {
+  if (square(a) + square(b) === square(c)) {
+    console.log(true);
+  } else console.log(false);
+};
+isRightAngle(3, 4, 5);

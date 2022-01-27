@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(155, 155, 155);
+}
+h1 {
+  text-align: center;
+}
+aside {
+  padding: 1em;
+}
+.crypto-ticker {
+  border: 1px solid black;
+  padding: 1em;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.crypto {
+  display: flex;
+  justify-content: space-between;
+}
+/* Neumorphic*/
+.neumorphic-txt {
+  /* color: #dddddd;
+  text-shadow: 4px -4px 8px #a8a8a8, -4px 4px 8px #ffffff; */
+}
+/* .neumorphic-inset {
+  border-radius: 0px;
+  background: #e0e0e0;
+  box-shadow: inset 10px 10px 30px #bebebe, inset -10px -10px 30px #ffffff;
+}
+.neumorphic-outset {
+  border-radius: 0px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+} */

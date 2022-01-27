@@ -109,3 +109,6 @@ body {
   height: 100vh;
   margin: 2vh;
 }
+.active {
+  /* background-color: #b10dc9; */
+}
